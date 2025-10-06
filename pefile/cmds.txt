@@ -1,0 +1,6 @@
+yara64 -s "C:\Users\Surya HT\Documents\Static\yara-master-v4.5.4-win64\generic_keylogger.yar" "C:\Users\Surya HT\Documents\Static\malware\keylogger.exe"
+
+python analyze.py
+
+strings -n 8 "C:\Users\Surya HT\Documents\Static\malware\keylogger.exe" > "C:\Users\Surya HT\Documents\Static\strings_output.txt"
+
